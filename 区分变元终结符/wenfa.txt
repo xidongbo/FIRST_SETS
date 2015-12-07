@@ -1,0 +1,64 @@
+program¡údeclar_list
+declar_list¡údeclar_list declar
+declar_list¡údeclar
+declar¡údeclar_var
+declar¡údeclar_func
+declar_var¡útype_var ID ;
+declar_var¡útype ID [ NUM ] ;
+type_var¡úint
+declar_func¡útype_func ID ( params ) compou_body
+type_func¡úint
+type_func¡úvoid
+params¡úparam_list
+params¡úvoid
+param_list¡úparam_list , param
+param_list¡úparam
+param¡útype_var ID
+param¡útype_var ID [ ]
+param¡útype_var ID [ NUM ]
+compou_body¡ú{ declar_local code }
+declar_local¡údeclar_local declar_var
+declar_local¡ú¦Å
+code¡úcode lines
+code¡ú¦Å
+lines¡úlines_asg
+lines¡úlines_select
+lines¡úlines_loop
+lines¡úlines_return
+lines¡úcompou_body
+lines_asg¡úexpre ;
+lines_asg¡ú;
+lines¡úif ( expre ) lines
+lines¡úif ( expre ) lines else lines
+lines_loop¡úwhile ( expre ) lines
+lines_return¡úreturn ;
+lines_return¡úreturn expre ;
+expre¡úvar = expre
+expre¡úexpre_rel
+var¡úID
+var¡úID [ expre ]
+expre_rel¡úexpre_arith op_rel expre_arith
+expre_rel¡úexpre_arith
+op_rel¡ú<=
+op_rel¡ú<
+op_rel¡ú>
+op_rel¡ú>=
+op_rel¡ú==
+op_rel¡ú!=
+expre_arith¡úexpre_arith op_add term
+expre_arith¡úterm
+op_add¡ú+
+op_add¡ú-
+term¡úterm op_mul factor
+term¡úfactor
+op_mul¡ú*
+op_mul¡ú/
+factor¡ú( expre )
+factor¡úvar
+factor¡úcall
+factor¡úNUM
+call¡úID ( args )
+args¡úarg_list
+args¡ú¦Å
+arg_list¡úarg_list , expre
+arg_list¡úexpre
